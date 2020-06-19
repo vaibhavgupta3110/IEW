@@ -1,0 +1,405 @@
+/* here you can put your own css to customize and override the theme */
+
+/***
+Rounded Portlets
+***/
+/*
+.portlet {
+	border-radius: 4px !important;
+}
+
+.portlet .portlet-title {
+	border-radius: 4px 4px 0px 0px !important;
+}
+
+.portlet .portlet-body,
+.portlet .portlet-body .form-actions  {
+	border-radius: 0px 0px 4px 4px !important;
+}
+*/
+
+/*
+Change Quick Sidebar Width
+*/
+
+/*
+.page-quick-sidebar-wrapper {
+  right: -370px;
+  width: 370px;
+}
+
+.page-quick-sidebar-open.page-quick-sidebar-push-content .page-sidebar-wrapper {
+  margin-left: -370px;
+}
+
+.page-quick-sidebar-open.page-quick-sidebar-push-content .page-footer {
+  margin-right: 370px;
+  margin-left: -370px;
+}
+
+.page-sidebar-reversed.page-quick-sidebar-open.page-quick-sidebar-push-content .page-sidebar-wrapper {
+  margin-right: 370px;
+}
+
+.page-quick-sidebar-open.page-quick-sidebar-push-content.page-quick-sidebar-full-height .page-header {
+  margin-left: -370px;
+}
+
+.page-quick-sidebar-wrapper .page-quick-sidebar .page-quick-sidebar-list {
+  width: 370px !important;
+}
+
+.page-quick-sidebar-wrapper .page-quick-sidebar .page-quick-sidebar-item {
+  width: 370px !important;
+  margin-left: 370px;
+}
+
+.page-quick-sidebar-wrapper .page-quick-sidebar .page-quick-sidebar-content-item-shown .page-quick-sidebar-list {
+  margin-left: -370px;
+}
+*/
+body{
+  overflow: hidden;
+  overflow-y: auto;
+}
+.page-header.navbar .page-logo{
+  padding-right: 10px;
+}
+table tr td:first-child{
+  white-space: nowrap;
+}
+table tr td{
+  color : #333;
+}
+
+span.retention{
+  display: inline-block;
+  padding:5px;
+  margin-right: 5px;
+  text-align: center;
+}
+.page-header.navbar .page-logo .logo-default{
+    margin: 5px 0 0 -25px;
+    max-height: 40px;
+}
+.login-logo{
+  display: none;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 15px;
+  text-align: center;
+}
+.login-logo.active{
+  display: block;
+  transition: all 0.5s
+}
+.page-title > small{
+  line-height: 31px;
+  vertical-align: top;
+  padding: 5px;
+  /* background: #aaa; */
+  color: #333;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+}
+
+th{
+  position: relative;
+}
+
+th small{
+  cursor: pointer;
+}
+
+tooltip{
+  display: none;
+}
+
+small:hover tooltip{
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  padding: 5px;
+  border: 1px solid #333;
+  background: #eee;
+  font-size: 15px;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+nvd3-scatter-chart > svg > g{
+  transform: translate(70px,30px) !important;
+}
+
+.nv-y.nv-axis g text{
+  opacity: 1
+}
+/* .nv-x.nv-axis g text{
+  writing-mode: vertical-lr;
+  transform: translateY(20px);
+} */
+
+.page-sidebar .page-sidebar-menu, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu, .page-header.navbar .page-logo{
+  width: 470px;
+}
+.page-content-wrapper .page-content{
+  margin-left: 0px;
+  padding: 0px 0px !important;
+}
+.page-header.navbar .menu-toggler.sidebar-toggler{
+  background: none;
+  display: none;
+}
+.page-header.navbar .menu-toggler.sidebar-toggler:before{
+  content: "\f053";
+  font-family: FontAwesome;
+  color: white;
+  font-size: 25px;
+}
+
+.page-sidebar-closed .page-header.navbar .menu-toggler.sidebar-toggler:before{
+  content: "\f054";
+  font-family: FontAwesome;
+  color: white;
+  font-size: 25px;
+}
+.page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed > li:hover > a{
+  width: 516px;
+}
+.page-sidebar-closed .page-sidebar .page-sidebar-menu.page-sidebar-menu-closed > li:hover > .sub-menu{
+  width: 470px;
+  box-shadow: none;
+}
+.page-sidebar-menu.page-sidebar-menu-closed > li:hover{
+  box-shadow: none !important;
+}
+.page-sidebar-menu.page-sidebar-menu-closed > li:hover .sub-menu{
+  box-shadow: none !important;
+}
+
+span.row {
+  min-width: 120px;
+  display: inline-block;
+  text-align: center;
+}
+
+div.tb-row{
+  display: flex;
+}
+
+.portlet-body .head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 0px 15px;
+}
+.portlet-body .head p{
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+.stage-active, .stage-inactive{
+  padding: 0px;
+}
+.stage-active{
+  padding-right: 15px;
+}
+.stage-inactive{
+  padding: 50px 30px;
+}
+
+.stage-active .heading, .stage-inactive .heading{
+  padding: 15px;
+  font-size: 25px;
+}
+
+.stage-active .heading{
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+.stage-inactive .heading{
+  background-color: transparent;
+  color: #FFFFFF;
+}
+
+.stage-active .func-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+  align-items: center;
+  height: 125px;
+  position: relative;
+}
+.stage-active .func-item .func-name {
+  color: white;
+  font-size: 25px;
+  z-index: 555;
+  margin: 0 auto;
+}
+.stage-active .func-item .func-value {
+  color: #d0d0d0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  right: 20px;
+}
+.stage-active .func-item .func-value span{
+  font-size: 20px;
+}
+.stage-active .func-item .func-value span:first-child {
+  font-size: 40px;
+  color: #6f8183;
+}
+
+.stage-inactive .func-item {
+  color: #454146;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  justify-content: center;
+  position: relative;
+}
+.stage-inactive button.func-item{
+  border-radius: 10px;
+  background: url('/imgs/button.png');
+  width: 100%;
+  color: white;
+  background-size: 100% 100%;
+  border: 0px;
+}
+.stage-active button.func-item{
+  border-radius: 10px;
+  background: url('/imgs/button.png');
+  width: 100%;
+  color: white;
+  background-size: 100% 100%;
+  border: 0px;
+  max-width: 500px;
+  max-height: 75px;
+  justify-content: center;
+  margin: 15px auto;
+  font-size: 20px;
+}
+button.func-item{
+  border-radius: 10px;
+  background: url('/imgs/button.png');
+  width: 100%;
+  color: white;
+  background-size: 100% 100%;
+  border: 0px;
+  max-width: 500px;
+  height: 75px;
+  justify-content: center;
+  margin: 15px auto;
+  font-size: 20px;
+  clear: both;
+  display: block;
+}
+.stage-inactive div:last-child{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stage-inactive .func-item .func-name{
+  z-index: 555;
+  color: white;
+}
+
+.stage-inactive .func-item img, .stage-active .func-item img{
+  position: absolute;
+  width: 100%;
+  height: 107%;
+  left: 0;
+  top: 0;
+}
+
+.head span{
+  font-size: 30px;
+}
+
+.head > span:nth-child(2){
+  font-size: 40px;
+  padding: 0px 15px;
+  color: black;
+  font-weight: bold;
+}
+.page-sidebar-wrapper{
+  display: none !important;
+}
+
+.footer-menu{
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background: black;
+}
+.footer-menu .footer-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex: 1;
+}
+
+.footer-menu .footer-item p{
+  color: #6e8381;
+  margin-top: 5px;
+}
+
+.bg-container{
+  background: url('/imgs/background.png');
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh; */
+  justify-content: space-between;
+}
+.bg-container .content{
+  min-height: calc(100vh - 200px);
+}
+.bg-container > div:first-child{
+  flex: 1;
+}
+.page-header-fixed .page-container{
+  margin-top: 0px;
+}
+.img-content{
+  display: flex;
+  align-items: flex-start;
+  height: calc(100vh - 175px);
+  overflow: hidden;
+  padding-top: 20px !important;
+  /* overflow-y: auto; */
+}
+.img-content img{
+  width: 100%;
+  height: auto;
+  /* margin: 0 auto; */
+}
+.portlet {
+  margin-bottom: 10px;
+}
+.footer-item img{
+  max-width: 35px;
+}
+.footer-item:first-child img{
+  max-width: 180px;
+}
+.footer-item:nth-child(2) img{
+  max-width: 31px;
+}
+.footer-menu .footer-item:nth-child(3) p{
+  margin-top: 8px;
+}

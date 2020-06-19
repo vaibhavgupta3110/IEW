@@ -1,0 +1,102 @@
+<!-- BEGIN PAGE HEADER-->
+<!-- <h3 class="page-title">
+	Functions
+</h3> -->
+<!-- END PAGE HEADER-->
+<!-- BEGIN MAIN CONTENT -->
+<div>
+	<div class="row bg-container">
+		<div class="col-md-12 col-sm-12">
+			<!-- BEGIN PORTLET-->
+			<div class="portlet ">
+				<div class="portlet-body">
+					<div class="head">
+                        <span>Functions</span>
+                        <span style="background-color: {{backColor}}"> {{leftMin}} : {{leftSec}} </span>
+                        <span>Total Users: {{totalUser | number:0}}</span>
+                    </div>
+                    <div class="content">
+                        <div class="col-sm-8 stage-active">
+                            <div class="heading">STAGE {{activeStage}}</div>
+                            <div class="func-item">
+                                <img ng-src="/imgs/{{bigImages[activeStage-1][0]}}.png" alt="">
+                                <span class="func-name">{{texts[activeStage-1][0]}}</span>
+                                <p class="func-value"><Span>{{100 * (stage.func1 / totalUser)}}%</Span><span>{{stage.func1}} users</span></p>
+                            </div>
+                            <div class="func-item">
+                                <img ng-src="/imgs/{{bigImages[activeStage-1][1]}}.png" alt="">
+                                <span class="func-name">{{texts[activeStage-1][1]}}</span>
+                                <p class="func-value"><Span>{{100 * (stage.func2 / totalUser)}}%</Span><span>{{stage.func2}} users</span></p>
+                            </div>
+                            <div class="func-item">
+                                <img ng-src="/imgs/{{bigImages[activeStage-1][2]}}.png" alt="">
+                                <span class="func-name">{{texts[activeStage-1][2]}}</span>
+                                <p class="func-value"><Span>{{100 * (stage.func3 / totalUser)}}%</Span><span>{{stage.func3}} users</span></p>
+                            </div>
+                            <div class="func-item">
+                                <img ng-src="/imgs/{{bigImages[activeStage-1][3]}}.png" alt="">
+                                <span class="func-name">{{texts[activeStage-1][3]}}</span>
+                                <p class="func-value"><Span>{{100 * (stage.func4 / totalUser)}}%</Span><span>{{stage.func4}} users</span></p>
+                            </div>
+                            
+                            <button class="func-item" ng-click="unlockStage(1)" ng-if="activeStage == 1">Unlock Stage 1</button>
+                        </div>
+                        <div class="col-sm-4 stage-inactive">
+                            <div class="heading">STAGE {{activeStage + 1}} PREVIEW</div>
+                            <div class="func-item">
+                                <img ng-src="/imgs/{{smallImages[activeStage-1][0]}}.png" alt="">
+                                <span class="func-name">{{texts[activeStage][0]}}</span>
+                            </div>
+                            <div class="func-item">
+                                <img ng-src="/imgs/{{smallImages[activeStage-1][1]}}.png" alt="">
+                                <span class="func-name">{{texts[activeStage][1]}}</span>
+                            </div>
+                            <div class="func-item">
+                                <img ng-src="/imgs/{{smallImages[activeStage-1][2]}}.png" alt="">
+                                <span class="func-name">{{texts[activeStage][2]}}</span>
+                            </div>
+                            <div class="func-item">
+                                <img ng-src="/imgs/{{smallImages[activeStage-1][3]}}.png" alt="">
+                                <span class="func-name">{{texts[activeStage][3]}}</span>
+                            </div>
+                            <button class="func-item" ng-click="unlockStage(2)">UNLOCK STAGE {{activeStage + 1}}</button>
+                            <button class="func-item" ng-click="resetStage()">Reset</button>
+                        </div>
+                        
+                    </div>
+				</div>
+            </div>
+            
+			<!-- END PORTLET-->
+        </div>
+        <div class="footer-menu">
+            <a class="footer-item">
+                <img src="/imgs/logo.png" alt="">
+            </a>
+            <a class="footer-item" href='/#/functions'>
+                <img src="/imgs/icon_func_active.png" alt="func">
+                <p style='color:#35a1c8'>Functions</p>
+            </a>
+            <a class="footer-item" ng-href='/#/news'>
+                <img src="/imgs/icon_news.png" alt="news">
+                <p>Newsfeed</p>
+            </a>
+            <a class="footer-item" href='/#/pp'>
+                <img src="/imgs/icon_pay.png" alt="pp">
+                <p>Pay for Play</p>
+            </a>
+            <a class="footer-item" href='/#/settings'>
+                <img src="/imgs/icon_setting.png" alt="settings">
+                <p>Settings</p>
+            </a>
+        </div>
+	</div>
+</div>
+
+<!-- END MAIN CONTENT -->
+<!-- BEGIN MAIN JS & CSS -->
+<script>
+	Index.init();    
+	Tasks.initDashboardWidget();
+</script>
+<!-- BEGIN MAIN JS & CSS -->

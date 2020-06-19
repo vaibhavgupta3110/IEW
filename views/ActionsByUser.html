@@ -1,0 +1,74 @@
+<!-- BEGIN PAGE HEADER-->
+<div class="page-bar">
+	<ul class="page-breadcrumb">
+		<li>
+			<i class="fa fa-home"></i>
+			<a href="#/">Home</a>
+			<i class="fa fa-angle-right"></i>
+		</li>
+		<li>
+			<a href="#">All Actions By User</a>
+		</li>
+	</ul>
+	
+</div>
+<h3 class="page-title">
+	All Actions By User
+</h3>
+<!-- END PAGE HEADER-->
+<!-- BEGIN MAIN CONTENT -->
+<div ng-controller="ActionsbyuserController">
+	<div class="row">
+		<div class="col-md-12 col-sm-12">
+			<!-- BEGIN PORTLET-->
+			
+			<div class="form-group" style="float:left">
+				
+				<div>
+					<div class="input-group input-small">
+						Streamer : <input type="text" class="form-control" name="from" ng-model="streamer" ng-change="dataChange()">
+					</div>
+				</div>
+			</div>
+			<div class="portlet ">
+				<div class="portlet-body">
+					<div class="table-scrollable table-scrollable-borderless">
+						<table class="table table-hover table-stripe">
+							<thead>
+								<tr class="uppercase">
+									<th>
+										Timestamp <small>? <tooltip style="width:230px; left: 105px; height:30px; top:0px;">App Screen/Page Views</tooltip></small>
+									</th>
+									<th>
+										Action
+									</th>
+									<th>
+										Account
+									</th>
+									<th>
+										View used
+									</th>
+								</tr>
+							</thead>
+							<tr ng-repeat="item in resultData">
+								<td>{{item.ts | date:"yyyy-MM-dd  h:mma"}}</td>
+								<td>{{item.act}}</td>
+								<td>{{item.acc}}</td>
+								<td>{{item.c}}</td>
+							</tr>
+							
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- END PORTLET-->
+		</div>
+	</div>
+</div>
+<!-- END MAIN CONTENT -->
+<!-- BEGIN MAIN JS & CSS -->
+<script>
+	Index.init();    
+	Tasks.initDashboardWidget();
+</script>
+<!-- BEGIN MAIN JS & CSS -->

@@ -1,0 +1,30 @@
+{
+  "name": "Apollo Web Stats",
+  "version": "1.0",
+  "authors": [
+    "Hans Brunner"
+  ],
+  "description": "Description goes here",
+  "main": "app.js",
+  "keywords": [
+    "angularjs"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "3.3.13",
+    "nvd3": "1.1.15-beta",
+    "angularjs-nvd3-directives": "0.0.7"
+  },
+  "resolutions": {
+    "d3": "3.3.13"
+  }
+}
